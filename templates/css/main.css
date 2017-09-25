@@ -54,6 +54,9 @@
 	color:#E3F2FD;
 }
 
+.recipe-review{
+}
+
 .pad-base{
 	padding-bottom:50px;
 }
@@ -98,6 +101,10 @@ textarea{
 	resize:none;
 	height:150px;
 	}
+
+button{
+	background-color:#2196F3 !important;
+}
 
 footer{
 	width:100%;

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<title>Recipes - More recipe</title>
+<title>Recipes Details- More recipe</title>
 <link rel="stylesheet" href="css/bootstrap.css" />
 <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
 <link rel="stylesheet" href="css/jquery-ui.min.css" />
@@ -51,13 +51,30 @@
 
 		<div class="row" style="margin-top:50px">
         	<section class="col-md-8">
-          		<h3>Recipes</h3>
+          		<h3>Title of recipe</h3>
                     <article class="recipe-listing">
-                     <h4><a href="">Recipe Title</a></h4>
-                        This is a where the details of a recipe recipe will be loaded.
+                     
+                        This is a where the details of a recipe will be loaded.
                         <h5 id="recipe-author">-Recipe Author</h5>
                     </article>
                     
+               
+               <h3>Reviews</h3>    
+                    <article class="recipe-review jumbotron">
+                     
+                        This is a where the details of a recipe review will be loaded.
+                        <h5 id="recipe-author">-Reviewer</h5>
+                    </article>
+                    
+                    <article class="recipe-review jumbotron">
+                     
+                        This is a where the details of a recipe review will be loaded.
+                        <h5 id="recipe-author">-Reviewer</h5>
+                    </article>
+                    
+                    
+                    
+                   <h3>Leave your Review</h3>
                     <form role="form" action="" method="post">
                  <div class="form-group">
                      <label for="name"></label>
@@ -71,10 +88,10 @@
                  
                  <div class="form-group">
                     <label for="recipe"></label>
-                      <textarea class="form-control" rows="10" name="recipe" id="recipe" placeholder="Recipe"></textarea>
+                      <textarea class="form-control" rows="10" name="recipe" id="recipe" placeholder="Review"></textarea>
                  </div>
                  
-                  <button type="submit" class="btn btn-info" name="sign_in">Post</button>
+                  <button type="submit" class="btn btn-info" name="post_review" id="postReview">Post Review</button>
                 </form>  
                     
                     
