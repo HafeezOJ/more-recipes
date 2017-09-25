@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+<title>Recipes - More recipe</title>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="css/jquery-ui.min.css" />
+<link rel="stylesheet" href="css/main.css" />
+<script language="javascript" src="js/jquery-2.1.1.min.js"></script>
+<script language="javascript" src="js/jquery-ui.min.js"></script>
+<script language="javascript" src="js/bootstrap.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid pad-base">
+		<header class="row navbar-fixed-top my-nav-header">
+			<div class="col-md-12">
+				<div class="navbar-header brand">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar" style="color:#FFF; font-weight:bold;">---</span>
+								<span class="icon-bar" style="color:#FFF; font-weight:bold;">---</span>
+								<span class="icon-bar" style="color:#FFF; font-weight:bold;">---</span>
+						</button>
+						<a class="navbar-brand"><strong>More-Recipes</strong></a>
+				</div>
+				
+				<div class="navbar-collapse collapse">                     
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Recipes</a></li>
+						<li><a href="about_more_recipe.html">About More-Recipes</a></li>
+                        <li>
+                  <form class="form-inline" style="background-color:#FFF;border:1px solid #CCC;margin-top:5px;border-radius:5px;">
+    <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="border:0px #FFFFFF;">
+    <button class="btn" type="submit" style="background-color:#2196F3 !important;"><!--Search--><span class="glyphicon glyphicon-search"></span></button></form>
+                        </li>
+					</ul>
+
+                    
+					<div class="pull-right"> 
+						<ul class="nav navbar-nav">
+							<li class="pull-right" id="sign-in"><a href="sign_in.html" id="sign-in">Sign in<span class="slash-separator">/</span>Sign up</a>
+								<!--<ul class="dropdown-menu">
+								   <li><a href="">Log out</a></li>
+								</ul>-->
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="row" style="margin-top:50px">
+        	<section class="col-md-8">
+          		<h3>Recipes</h3>
+                    <article class="recipe-listing">
+                     <h4><a href="">Recipe Title</a></h4>
+                        This is a where the details of a recipe recipe will be loaded.
+                        <h5 id="recipe-author">-Recipe Author</h5>
+                    </article>
+                    
+                    <form role="form" action="" method="post">
+                 <div class="form-group">
+                     <label for="name"></label>
+                     <input type="text" class="form-control" name="fullname" id="name" placeholder="Fullname" maxlength="15" size="20">
+                 </div>
+                 
+                 <div class="form-group">
+                     <label for="email"></label>
+                     <input type="email" class="form-control" name="email" id="email" placeholder="Email" maxlength="15" size="20">
+                 </div>
+                 
+                 <div class="form-group">
+                    <label for="recipe"></label>
+                      <textarea class="form-control" rows="10" name="recipe" id="recipe" placeholder="Recipe"></textarea>
+                 </div>
+                 
+                  <button type="submit" class="btn btn-info" name="sign_in">Post</button>
+                </form>  
+                    
+                    
+        	</section>
+          
+       		<section class="col-md-4">
+          		<h3>Popular Recipes</h3> 
+                <article class="popular-recipe">
+                 <h4><a href="">Recipe Title</a></h4>
+                	This is a popular recipe
+                    <h5 id="fav-recipe-author">-Recipe Author</h5>
+                </article>
+                
+                <article class="popular-recipe">
+                  <h4><a href="">Recipe Title</a></h4>
+                	This is a popular recipe
+                    <h5 id="fav-recipe-author">-Recipe Author</h5>
+                </article>
+                
+                <article class="popular-recipe">
+                  <h4><a href="">Recipe Title</a></h4>
+                	This is a popular recipe
+                    <h5 id="fav-recipe-author">-Recipe Author</h5>
+                </article>
+                
+                <article class="popular-recipe">
+                  <h4><a href="">Recipe Title</a></h4>
+                	This is a popular recipe
+                    <h5 id="fav-recipe-author">-Recipe Author</h5>
+                </article>
+                
+                <article class="popular-recipe">
+                 <h4><a href="">Recipe Title</a></h4>
+                	This is a popular recipe
+                    <h5 id="fav-recipe-author">-Recipe Author</h5>
+                </article>
+                
+        	</section>
+    	</div>
+      
+    	<footer class="row">
+        	<div class="col-md-12">
+            	&copy; Bootcamp27 More-Recipe 
+            </div>
+   	    </footer>
+	</div>
+</body>
+</html>
