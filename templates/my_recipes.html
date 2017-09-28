@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Recipes - More recipe</title>
+    <title>My Recipes - More recipe</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="css/jquery-ui.min.css" />
@@ -22,10 +22,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="nav navbar-nav">
-                       	<li class="nav-item"><a class="nav-link" href="index.html"><img src="css/icons/home_24px.svg" class="glyph-icon"/>Home</a></li>
+                       	<li class="nav-item"><a class="nav-link" href="index.html"><img src="css/icons/home_24px.svg" class="glyph-icon"/>Catalog</a></li>
                         
-                        <li class="nav-item" style="display:inline;"><a href="sign_up.html" class="nav-link"><img src="css/icons/sign_up_24px.svg" class="glyph-icon"/> Sign Up</a></li>
-                        <li class="nav-item" style="display:inline;"><a href="sign_in.html" class="nav-link"><img src="css/icons/sign_in_24px.svg" class="glyph-icon si-glyph" />Sign In</a></li>
+                        <li class="nav-item" style="display:inline;"><a href="profile.html" class="nav-link"><img src="css/icons/sign_up_24px.svg" class="glyph-icon"/>My Profile</a></li>
+                        <li class="nav-item" style="display:inline;"><a href="my_recipes.html" class="nav-link"><img src="css/icons/sign_up_24px.svg" class="glyph-icon"/>My Recipes</a></li>
+                        
+                        <li class="nav-item" style="display:inline;"><a href="add_recipe.html" class="nav-link"><img src="css/icons/add_recipe_24px.svg" class="glyph-icon si-glyph" />Add Recipe</a></li>
+                        
+                        <li class="nav-item" style="display:inline;"><a href="sign_in.html" class="nav-link"><img src="css/icons/sign_out_24px.svg" class="glyph-icon si-glyph" />Sign Out</a></li>
                     
                    
                         <li><form class="form-inline" style="background-color:#FFF;border:1px solid #CCC;margin-top:5px;border-radius:5px;">
@@ -33,7 +37,7 @@
                       <button class="btn btn-outline-success btn-sm" type="submit" id="search-button" data-toggle="tooltip" title="search!">
 <img src="css/icons/Search_24px.svg" class="glyph-icon"/></button>
                     </form></li>
-                    </ul>                                      
+                    </ul>                                     
                 </div>
             </nav>
         </div>
@@ -44,87 +48,63 @@
             <div class="container main-content">
             	<div class="row">
                 	<section class="col-md-8">
-                    	<h3>Recipes</h3>
+                    	<h3>My Recipes</h3>
                         <section>
                             <div class="card" style="width: 20rem; float:left;">
                                 <img src="images/1_cheesy-chex-mix.jpg" class="card-img-top">
                                 <div class="card-body">
-                                    <p class="card-title"><a href="">Cheesy Mix</a></p>
+                                    <p class="card-title">Cheesy Mix</p>
                                     <p class="card-text">This is cheese mix from Hafeez</p>
                                     <ul class="list-group">
                                         <li class="list-group-item">Flour</li>
                                     </ul>
                                     <ul>
-                                        <li class="user-ops"><a href="" data-toggle="tooltip" title="Vote Up"><img src="css/icons/vote_up_24px.svg" class="glyph-icon" /></a></li>
-                                        <li class="user-ops"><a href="" data-toggle="tooltip" title="Vote Down"><img src="css/icons/vote_down_24px.svg" class="glyph-icon"/></a></li>
-                                        <li class="user-ops"><a href="" data-toggle="tooltip" title="Review"><img src="css/icons/review_24px.svg" class="glyph-icon" /></a></li>
+                                    
+                                    <li class="user-ops"><a href="" data-toggle="tooltip" title="Vote Up"><img src="css/icons/vote_up_24px.svg" class="glyph-icon" /></a></li>
+                                    <li class="user-ops"><a href="" data-toggle="tooltip" title="Vote Down"><img src="css/icons/vote_down_24px.svg" class="glyph-icon"/></a></li>
+                                    	<li class="user-ops"><a href="" data-toggle="tooltip" title="Edit Recipe"><img src="css/icons/edit_24px.svg" class="glyph-icon"/></a></li>
+                                        <li class="user-ops"><a href="" data-toggle="tooltip" title="Delete Recipe"><img src="css/icons/delete_24px.svg" class="glyph-icon"/></a></li>
+                                        
                                     </ul>
                                 </div>                        
                             </div>
                             
-                            <div class="card" style="width: 20rem;">
-                                <img src="images/pizza.jpg" class="card-img-top">
+                            <div class="card" style="width: 20rem; float:left;">
+                                <img src="images/1_cheesy-chex-mix.jpg" class="card-img-top">
                                 <div class="card-body">
-                                    <p class="card-title"><a href="">Pizza</a></p>
+                                    <p class="card-title">Cheesy Mix</p>
                                     <p class="card-text">This is cheese mix from Hafeez</p>
                                     <ul class="list-group">
                                         <li class="list-group-item">Flour</li>
                                     </ul>
+                                    
                                     <ul>
                                         <li class="user-ops"><a href="" data-toggle="tooltip" title="Vote Up"><img src="css/icons/vote_up_24px.svg" class="glyph-icon" /></a></li>
                                         <li class="user-ops"><a href="" data-toggle="tooltip" title="Vote Down"><img src="css/icons/vote_down_24px.svg" class="glyph-icon"/></a></li>
-                                        <li class="user-ops"><a href="" data-toggle="tooltip" title="Review"><img src="css/icons/review_24px.svg" class="glyph-icon" /></a></li>
+                                            <li class="user-ops"><a href="" data-toggle="tooltip" title="Edit Recipe"><img src="css/icons/edit_24px.svg" class="glyph-icon"/></a></li>
+                                            <li class="user-ops"><a href="" data-toggle="tooltip" title="Delete Recipe"><img src="css/icons/delete_24px.svg" class="glyph-icon"/></a></li>
                                     </ul>
                                 </div>                        
                             </div>
                             
-                            <div class="card" style="width: 20rem;">
-                                <img src="images/pizza.jpg" class="card-img-top">
-                                <div class="card-body">
-                                    <p class="card-title"><a href="">Pizza</a></p>
-                                    <p class="card-text">This is cheese mix from Hafeez</p>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Flour</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="user-ops"><a href="" data-toggle="tooltip" title="Vote Up"><img src="css/icons/vote_up_24px.svg" class="glyph-icon" /></a></li>
-                                        <li class="user-ops"><a href="" data-toggle="tooltip" title="Vote Down"><img src="css/icons/vote_down_24px.svg" class="glyph-icon"/></a></li>
-                                        <li class="user-ops"><a href="" data-toggle="tooltip" title="Review"><img src="css/icons/review_24px.svg" class="glyph-icon" /></a></li>
-                                    </ul>
-                                </div>                        
-                            </div>
                             
-                            <div class="card">
-                                <img src="images/jollof.jpg" class="card-img-top">
-                                <div class="card-body">
-                                    <p class="card-title"><a href="">Jollof Rice</a></p>
-                                    <p class="card-text">This is cheese mix from Hafeez</p>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Flour</li>
-                                    </ul>
-                                    <ul>
-                                        <li class="user-ops"><a href="" data-toggle="tooltip" title="Vote Up"><img src="css/icons/vote_up_24px.svg" class="glyph-icon" /></a></li>
-                                        <li class="user-ops"><a href="" data-toggle="tooltip" title="Vote Down"><img src="css/icons/vote_down_24px.svg" class="glyph-icon"/></a></li>
-                                        <li class="user-ops"><a href="" data-toggle="tooltip" title="Review"><img src="css/icons/review_24px.svg" class="glyph-icon" /></a></li>
-                                    </ul>
-                                </div>                        
-                            </div>
+                            
                         </section>
                     </section>
                     
                     <section class="col-md-4">
-                    	<h3>Popular Recipes</h3>
-                        	<div class="card">
-                                <img src="images/pizza.jpg" class="card-img-top">
+                    	<h3>My Favorite Recipes</h3>
+                        	<div class="card" style="width: 20rem;">
+                                <img src="images/jollof.jpg" class="card-img-top">
                                 <div class="card-body">
-                                    <p class="card-title"><a href="">Pizza</a></p>
+                                    <p class="card-title">Jollof Rice</p>
                                 </div>                        
                             </div>
                             
-                            <div class="card">
+                            <div class="card" style="width: 20rem;">
                                 <img src="images/pizza.jpg" class="card-img-top">
                                 <div class="card-body">
-                                    <p class="card-title"><a href="">Pizza</a></p>
+                                    <p class="card-title">Pizza</p>
                                 </div>                        
                             </div>
                             

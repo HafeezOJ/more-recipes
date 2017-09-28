@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <head>
-<title>Add Recipe - More recipe</title>
-<link rel="stylesheet" href="css/bootstrap.css" />
-<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
-<link rel="stylesheet" href="css/jquery-ui.min.css" />
-<link rel="stylesheet" href="css/main.css" />
-<script language="javascript" src="js/jquery-2.1.1.min.js"></script>
-<script language="javascript" src="js/jquery-ui.min.js"></script>
-<script language="javascript" src="js/bootstrap.js"></script>
+    <title>Add Recipe - More recipe</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script language="javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script language="javascript" src="js/jquery-ui.min.js"></script>
+    <script language="javascript" src="js/bootstrap.js"></script>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
 		<header class="row navbar-fixed-top my-nav-header">
 			<div class="col-md-12">
 				<div class="navbar-header brand">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" id="search-button">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar" style="color:#FFF; font-weight:bold;">---</span>
 								<span class="icon-bar" style="color:#FFF; font-weight:bold;">---</span>
@@ -26,12 +26,11 @@
 				
 				<div class="navbar-collapse collapse">                     
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">Recipes</a></li>
-						<li><a href="about_more_recipe.html">About More-Recipes</a></li>
-                        <li>
+						<li><a href="index.html">Home</a></li>
+						<li>
                   <form class="form-inline" style="background-color:#FFF;border:1px solid #CCC;margin-top:5px;border-radius:5px;">
     <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="border:0px #FFFFFF;">
-    <button class="btn" type="submit" style="background-color:#2196F3 !important;"><!--Search--><span class="glyphicon glyphicon-search"></span></button></form>
+    <button class="btn" type="submit" style="background-color:#2196F3 !important;" id="search-button"><!--Search--><span class="glyphicon glyphicon-search"></span></button></form>
                         </li>
 					</ul>
 

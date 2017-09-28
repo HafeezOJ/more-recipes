@@ -1,9 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
-	
+
+
 .navbar-nav li{
-	margin-left: 15px;
-	margin-right: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
 	list-style-type: none;
 }
 
@@ -19,8 +20,20 @@
 }
 
 .brand{
-	box-shadow:5px 5px 10px #4CAF50;
+	box-shadow: 2px 2px 2px #4CAF50;
+}
 
+.brand-name{
+	color: #2196F3;
+	background-color:#FFF;
+	font-weight:bold;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size:25px;
+	letter-spacing:4px;
+	text-align:center;
+	text-shadow: 5px 5px 10px #4CAF50;
+	padding: 0px 8px 0px 8px !important;
+	border-radius:15px 2px 2px 15px;
 }
 
 .nav li a{
@@ -76,9 +89,20 @@
 	text-align:center;
 }
 
-.slash-separator{
-	font-weight:bold;
-	font-size:24px;
+.recipes{
+	background-attachment:fixed;
+	background-image:url(../images/gizzard.jpg);
+	min-height:600px;
+	margin-bottom:0px;
+}
+
+.sign-up-form, .sign-up-in, .add-recipe-form{
+	margin-top: 70px;
+	margin-bottom:100px;
+}
+
+.sign-up-form h3, .sign-up-in h3, .add-recipe-form h3 {
+	color:#FFF;
 }
 
 #sign-in a{
@@ -86,10 +110,26 @@
 	color:#FFF !important;
 }
 
+#search-button{
+	background-color:#FFF !important;
+	border:0px;
+}
 
+#hamburger{
+	background-color: #4CAF50 !important;
+}
 
 header{
+	/*background-color:black;*/
 	background-color:#4CAF50;
+	width:100%;
+	top:0px;
+	position:fixed;
+	z-index:9000;
+}
+
+body{
+	padding:0px;
 }
 
 h3{
@@ -102,9 +142,10 @@ textarea{
 	height:150px;
 	}
 
-button{
+/*button{
 	background-color:#2196F3 !important;
-}
+	border-radius:100px !important;
+}*/
 
 footer{
 	width:100%;
@@ -114,4 +155,66 @@ footer{
 	background-color:#1B5E20;
 	color:#FFF;
 	padding:10px;
+	margin:0px;
+}
+
+.glyph-icon{
+width:20px;
+height:20px;
+}
+
+.si-glyph{
+fill: red;
+}
+
+.main-content{
+	background-color:#FFF;
+	margin-top:50px;
+	margin-bottom:50px;
+	opacity: 0.8;
+	padding:5px;
+}
+
+.card{
+	float:left !important;
+	widows:20em;
+	margin:20px;
+}
+
+.card-img-top{
+	width:318px !important;
+	height:200px !important;
+}
+
+.user-ops{
+	text-align:center;
+	display:inline !important;
+	list-style-image:none;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.do {
+	color: green;
+	}
+	
+
+.ui-tooltip{
+	font-size:12px !important;
+	width:auto !important;
+	padding:3px !important;
+	color:#FFF !important;
+	background-color:#000;
+}
+
+.menu-right{
+	float:right !important;	
+}
+
+button{
+	border-radius: 20px !important;
+}
+
+button:hover{
+	border: 3px solid #2D9434 !important;
 }

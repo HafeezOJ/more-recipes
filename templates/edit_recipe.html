@@ -8,104 +8,78 @@
 <script language="javascript" src="js/jquery-2.1.1.min.js"></script>
 <script language="javascript" src="js/jquery-ui.min.js"></script>
 <script language="javascript" src="js/bootstrap.js"></script>
+<script language="javascript" src="js/scripts.js"></script>
 </head>
 
 <body>
 	<div class="container-fluid pad-base">
-		<header class="row navbar-fixed-top my-nav-header">
-			<div class="col-md-12">
-				<div class="navbar-header brand">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar" style="color:#FFF; font-weight:bold;">---</span>
-								<span class="icon-bar" style="color:#FFF; font-weight:bold;">---</span>
-								<span class="icon-bar" style="color:#FFF; font-weight:bold;">---</span>
-						</button>
-						<a class="navbar-brand"><strong>More-Recipes</strong></a>
-				</div>
-				
-				<div class="navbar-collapse collapse">                     
-					<ul class="nav navbar-nav">
-						<li><a href="index.html">Recipes</a></li>
-						<li><a href="about_more_recipe.html">About More-Recipes</a></li>
-                        <li>
-                  <form class="form-inline" style="background-color:#FFF;border:1px solid #CCC;margin-top:5px;border-radius:5px;">
-    <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="border:0px #FFFFFF;">
-    <button class="btn" type="submit" style="background-color:#2196F3 !important;"><!--Search--><span class="glyphicon glyphicon-search"></span></button></form>
-                        </li>
-					</ul>
-
+    <header class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-sm brand" style="padding:1px !important;">
+                <div class="brand-name"><a class="navbar-brand" href="index.html"><span class="brand-name">More Recipe</span></a></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav navbar-nav">
+                       	<li class="nav-item"><a class="nav-link" href="#"><img src="css/icons/home_24px.svg" class="glyph-icon"/>Catalog</a></li>
+                        
+                        <li class="nav-item" style="display:inline;"><a href="profile.html" class="nav-link"><img src="css/icons/sign_up_24px.svg" class="glyph-icon"/>My Profile</a></li>
+                        <li class="nav-item" style="display:inline;"><a href="my_recipes.html" class="nav-link"><img src="css/icons/sign_up_24px.svg" class="glyph-icon"/>My Recipes</a></li>
+                        
+                        <li class="nav-item" style="display:inline;"><a href="add_recipe.html" class="nav-link"><img src="css/icons/add_recipe_24px.svg" class="glyph-icon si-glyph" />Add Recipe</a></li>
+                        
+                        <li class="nav-item" style="display:inline;"><a href="sign_in.html" class="nav-link"><img src="css/icons/sign_out_24px.svg" class="glyph-icon si-glyph" />Sign Out</a></li>
                     
-					<div class="pull-right"> 
-						<ul class="nav navbar-nav">
-							<li class="pull-right" id="sign-in"><a href="#" class="dropdown-toggle" data-toggle="dropdown" id="sign-in">Current User</a>
-							<ul class="dropdown-menu">
-                            	<li><a href="#">My Profile</a></li>
-                                <li><a href="add_recipe.html">Add Recipe</a></li>
-                               	<li><a href="#">Sign out</a></li>
-                            </ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
+                   
+                        <li><form class="form-inline" style="background-color:#FFF;border:1px solid #CCC;margin-top:5px;border-radius:5px;">
+                      <input class="form-control form-control-sm" type="text" placeholder="Search" aria-label="Search" style="border:0px">
+                      <button class="btn btn-outline-success btn-sm" type="submit" id="search-button" data-toggle="tooltip" title="search!">
+<img src="css/icons/Search_24px.svg" class="glyph-icon"/></button>
+                    </form></li>
+                    </ul>                                     
+                </div>
+            </nav>
+        </div>
+    </header>
 
-		<div class="row" style="margin-top:50px">       
-          
-       		<section class="col-md-8">
-          		<h3>Edit Recipe</h3>
+		<div class="row recipes" style="margin-top:50px;">
+        	<section class="col-md-4">
+          		
                 
-                <form role="form" action="" method="post">
+        	</section>
+          
+       		<section class="col-md-4">
+          		
+                
+                <form role="form" action="" method="post" class="add-recipe-form">
+                <h3>Edit Recipe</h3>
                  <div class="form-group">
                      <label for="name"></label>
                      <input type="text" class="form-control" name="recipe_title" id="recipeTitle" placeholder="Title of Recipe">
                  </div>
+                 
+                 <div class="form-group">
+                     <label for="name"></label>
+                     <input type="text" class="form-control" name="recipe_title" id="recipeIngredients" placeholder="Ingredients">
+                 </div>
+                           
                                
                  <div class="form-group">
                       <label for="recipe"></label>
-                      <textarea class="form-control" rows="2" name="recipe" id="recipe" placeholder="Recipe"></textarea>
+                      <textarea class="form-control" rows="10" name="recipe" id="recipe" placeholder="Instructions"></textarea>
                     </div>
                  
-                  <button type="submit" class="btn btn-info" name="add">Add Recipe</button>
+                  <button type="submit" class="btn btn-default" name="add">Update Recipe</button>
                 </form>  
                 
         	</section>
             
             <section class="col-md-4">
-	            <h3>My Favourite Recipes</h3>
-          		 <article class="popular-recipe">
-                 <h4><a href="">Recipe Title</a></h4>
-                	This is a popular recipe
-                    <h5 id="fav-recipe-author">-Recipe Author</h5>
-                </article>
+          		<h3>My Favorite Recipes</h3>
                 
-                <article class="popular-recipe">
-                  <h4><a href="">Recipe Title</a></h4>
-                	This is a popular recipe
-                    <h5 id="fav-recipe-author">-Recipe Author</h5>
-                </article>
-                
-                <article class="popular-recipe">
-                  <h4><a href="">Recipe Title</a></h4>
-                	This is a popular recipe
-                    <h5 id="fav-recipe-author">-Recipe Author</h5>
-                </article>
-                
-                <article class="popular-recipe">
-                  <h4><a href="">Recipe Title</a></h4>
-                	This is a popular recipe
-                    <h5 id="fav-recipe-author">-Recipe Author</h5>
-                </article>
-                
-                <article class="popular-recipe">
-                 <h4><a href="">Recipe Title</a></h4>
-                	This is a popular recipe
-                    <h5 id="fav-recipe-author">-Recipe Author</h5>
-                </article>
                 
         	</section>
-            
     	</div>
       
     	<footer class="row">
